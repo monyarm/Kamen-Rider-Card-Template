@@ -1,0 +1,205 @@
+﻿mse version: 0.3.8
+game: kamen
+full name: Kamen Rider
+short name: Kamen Rider
+icon: sample.png
+position hint: 46
+installer group: Kamen/game
+
+version: 2014-04-11
+depends on: 
+	package:kamen.mse-game
+	version: 2014-04-11
+depends on: 
+	package:kamen-icons.mse-include
+	version: 2014-04-11
+
+	
+card width: 375
+card height: 523
+
+styling field:
+	type: text
+	name: imagetop
+	description: Number of pixels between the top edge of the card and the image.
+styling field:
+	type: text
+	name: imageleft
+	description: Number of pixels between the left hand edge of the card and the image.
+styling field:
+	type: text
+	name: imagewidth
+	description: Image width
+styling field:
+	type: text
+	name: imageheight
+	description: Image height
+styling field:
+	type: image
+	name: custom logo
+	save value: true
+	description: This is where you load custom logos that will appear on all your cards.
+############################################################## Card fields
+card style:
+	background:
+		left:	0
+		top:	0
+		width:	375
+		height:	523
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			Normal: kamen-ride.png
+			Final: attack-ride.png
+	overlay:
+		left:	0
+		top:	0
+		width:	375
+		height:	523
+		z index: 3
+		render style: image
+		popup style: in place
+		visible: { if card.background == "Normal" then true}
+		image: overlay.png
+	image:
+		top: 44
+		left: 50
+		width: 325
+		height: 479
+		z index: 2
+		mask: rider-mask.png
+	Type:
+		top: 422
+		left: 58
+		height: 23
+		width: 205
+		z index: 2
+		font:
+			name: Beast Machines
+			size: 10
+			color: rgb(255,255,255)
+	Name:
+		top: 385
+		left: 160
+		height: 23
+		width: 185
+		z index: 2
+		alignment: shrink-overflow
+		font:
+			name: Beast Machines
+			size: 10
+			color: rgb(255,255,255)
+	Prefix:
+		top: 391
+		left: 58
+		height: 17
+		width: 105
+		z index: 2
+		alignment: center shrink-overflow
+		font:
+			name: Beast Machines
+			size: 7
+			color: rgb(255,255,255)
+	Icon:
+		top: { if styling.imagetop != "" then to_real(styling.imagetop) else 420}
+		left: { if styling.imageleft != "" then to_real(styling.imageleft) else 240}
+		width: { if styling.imagewidth != "" then to_real(styling.imagewidth) else 86}
+		height: { if styling.imageheight != "" then to_real(styling.imageheight) else 86}
+		z index: 2
+		render style: image
+		popup style: in place
+		choice images:
+			Showa Ichigo/Nigo: /kamen-icons.mse-include/Tachibana.png
+			Showa V3: /kamen-icons.mse-include/V3.png
+			Showa Riderman: /kamen-icons.mse-include/Riderman.png
+			Showa X: /kamen-icons.mse-include/X.png
+			Showa Amazon: /kamen-icons.mse-include/Amazon.png
+			Showa Stronger: /kamen-icons.mse-include/Stronger.png
+			Showa Skyrider: /kamen-icons.mse-include/Skyrider.png
+			Showa Super-1: /kamen-icons.mse-include/Super-1.png
+			Showa ZX: /kamen-icons.mse-include/ZX.png
+			Showa Black: /kamen-icons.mse-include/Black.png
+			Showa Black RX: /kamen-icons.mse-include/Black-Rx.png
+			Showa Shin: /kamen-icons.mse-include/Shin.png
+			Showa ZO: /kamen-icons.mse-include/ZO.png
+			Showa J: /kamen-icons.mse-include/J.png
+			
+			Heisei Kuuga Kuuga: /kamen-icons.mse-include/Kuuga.png
+			Heisei Kuuga Mighty: /kamen-icons.mse-include/Mighty.png
+			Heisei Kuuga Dragon: /kamen-icons.mse-include/Dragon.png
+			Heisei Kuuga Pegasus: /kamen-icons.mse-include/Pegasus.png
+			Heisei Kuuga Titan: /kamen-icons.mse-include/Titan.png
+			Heisei Kuuga Ultimate: /kamen-icons.mse-include/Ultimate.png
+			
+			Heisei Agito Agito: /kamen-icons.mse-include/Agito.png
+			Heisei Agito Another_Agito: /kamen-icons.mse-include/Another_Agito.png
+			
+			Heisei Ryuki Ryuki: /kamen-icons.mse-include/Ryuki.png
+			Heisei Ryuki Ohja: /kamen-icons.mse-include/Ohja.png
+			Heisei Ryuki Raia: /kamen-icons.mse-include/Raia.png
+			Heisei Ryuki Odin: /kamen-icons.mse-include/Odin.png
+			Heisei Ryuki Ryuga: /kamen-icons.mse-include/Ryuga.png
+			Heisei Ryuki Knight: /kamen-icons.mse-include/Knight.png
+			Heisei Ryuki Zolda: /kamen-icons.mse-include/Zolda.png
+			Heisei Ryuki Scissors: /kamen-icons.mse-include/Scissors.png
+			Heisei Ryuki Gai: /kamen-icons.mse-include/Gai.png
+			Heisei Ryuki Imperer: /kamen-icons.mse-include/Imperer.png
+			Heisei Ryuki Zolda: /kamen-icons.mse-include/Femme.png
+			Heisei Ryuki Scissors: /kamen-icons.mse-include/Verde.png
+			Heisei Ryuki Gai: /kamen-icons.mse-include/Tiger.png
+			Heisei Ryuki Alternative: /kamen-icons.mse-include/Alternative.png
+			
+			Heisei Faiz Faiz: /kamen-icons.mse-include/Faiz.png
+			Heisei Faiz Delta: /kamen-icons.mse-include/Delta.png
+			Heisei Faiz Kaixa: /kamen-icons.mse-include/Kaixa.png
+			Heisei Faiz Psyga: /kamen-icons.mse-include/Psyga.png
+			Heisei Faiz Orga: /kamen-icons.mse-include/Orga.png
+			
+			Heisei Blade Blade: /kamen-icons.mse-include/Blade.png
+			Heisei Blade Garren: /kamen-icons.mse-include/Garren.png
+			Heisei Blade Chalice: /kamen-icons.mse-include/Chalice.png
+			Heisei Blade Leange: /kamen-icons.mse-include/Leangle.png
+			
+			Heisei Hibiki: /kamen-icons.mse-include/Hibiki.png
+			
+			Heisei Kabuto Kabuto: /kamen-icons.mse-include/Kabuto.png
+			Heisei Kabuto Drake: /kamen-icons.mse-include/Drake.png
+			
+			Heisei Den-O Den-O: /kamen-icons.mse-include/Den-O.png
+			Heisei Den-O Zeronos: /kamen-icons.mse-include/Zeronos.png
+			
+			Heisei Kiva Kiva: /kamen-icons.mse-include/Kiva.png
+			Heisei Kiva Saga: /kamen-icons.mse-include/Saga.png
+			Heisei Kiva Rey: /kamen-icons.mse-include/Rey.png
+			Heisei Kiva Ixa: /kamen-icons.mse-include/Ixa.png
+			Heisei Kiva Arc: /kamen-icons.mse-include/Arc.png
+			
+			Heisei Decade Decade: /kamen-icons.mse-include/Decade.png
+			Heisei Decade Diend: /kamen-icons.mse-include/Diend.png
+			
+			Heisei G: /kamen-icons.mse-include/G.png
+			
+			Heisei W W: /kamen-icons.mse-include/W.png
+			Heisei W Skull: /kamen-icons.mse-include/Skull.png
+			Heisei W Accel: /kamen-icons.mse-include/Accel.png
+			
+			Heisei OOO OOO:/kamen-icons.mse-include/OOO.png
+			
+			Heisei Fourze Fourze: /kamen-icons.mse-include/Fourze.png
+			Heisei Fourze Meteor: /kamen-icons.mse-include/Meteor.png
+			
+			Heisei Wizard Wizard: /kamen-icons.mse-include/Wizard.png
+			
+			Heisei Gaim Gaim: /kamen-icons.mse-include/Gaim.png
+			Heisei Gaim Malika: /kamen-icons.mse-include/Malika.png
+			
+			Heisei Drive Drive: /kamen-icons.mse-include/Drive.png
+			
+			Heisei Ghost Ghost: /kamen-icons.mse-include/Ghost.png
+			Heisei Ghost Spectre: /kamen-icons.mse-include/Spectre.png
+			
+			Sentai Goranger: /kamen-icons.mse-include/Goranger.png
+			Sentai JAKQ: /kamen-icons.mse-include/JAKQ.png
+			Sentai Gokaiger: /kamen-icons.mse-include/Gokaiger.png
+			Other...: { styling.custom_logo }

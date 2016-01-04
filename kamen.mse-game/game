@@ -1,0 +1,129 @@
+﻿mse version: 0.3.8
+full name: Kamen Rider
+short name: Kamen Rider
+icon: sample.png
+position hint: 46
+installer group: Kamen/game
+
+version: 2014-04-11
+
+card field:
+	type: image
+	name: image
+	description: The card's image.
+card field:
+	type: choice
+	name: overlay
+	editable: false
+	save value: false
+	choice: overlay
+card field:
+	type: choice
+	name: background
+	choice: Normal
+	choice: Final
+card field:
+	type: text
+	name: Type
+card field:
+	type: text
+	name: Name
+card field:
+	type: text
+	name: Prefix
+card field:
+	type: choice
+	name: Icon
+	choice: Showa
+		choice: Ichigo/Nigo
+		choice: V3
+		choice: Riderman
+		choice: X
+		choice: Amazon
+		choice: Stronger
+		choice: Skyrider
+		choice: Super-1
+		choice: ZX
+		choice: Black
+		choice: Black RX
+		choice: Shin
+		choice: ZO
+		choice: J
+	choice: Heisei
+		choice: Kuuga
+			choice: Kuuga
+			choice: Mighty
+			choice: Dragon
+			choice: Pegasus
+			choice: Titan
+			choice: Ultimate
+		choice: Agito
+			choice: Agito
+			choice: Another_Agito
+		choice: Ryuki
+			choice: Ryuki
+			choice: Ryuga
+			choice: Knight
+			choice: Ohja
+			choice: Raia
+			choice: Odin
+			choice: Zolda
+			choice: Scissors
+			choice: Gai
+			choice: Imperer
+			choice: Femme
+			choice: Tiger
+			choice: Verde
+			choice: Alternative
+		choice: Faiz
+			choice: Faiz
+			choice: Delta
+			choice: Kaixa
+			choice: Psyga
+			choice: Orga
+		choice: Blade
+			choice: Blade
+			choice: Garren
+			choice: Chalice
+			choice: Leange
+		choice: Hibiki
+		choice: Kabuto
+			choice: Kabuto
+			choice: Drake
+		choice: Den-O
+			choice: Den-O
+			choice: Zeronos
+		choice: Kiva
+			choice: Kiva
+			choice: Ixa
+			choice: Saga
+			choice: Rey
+			choice: Arc
+		choice: Decade
+			choice: Decade
+			choice: Diend
+		choice: G
+		choice: W
+			choice: W
+			choice: Skull
+			choice: Accel
+		choice: OOO
+			choice: OOO
+		choice: Fourze
+			choice: Fourze
+			choice: Meteor
+		choice: Wizard
+			choice: Wizard
+		choice: Gaim
+			choice: Gaim
+			choice: Malika
+		choice: Drive
+			choice: Drive
+		choice: Ghost
+			choice: Ghost
+			choice: Spectre
+	choice: Sentai
+		choice: Goranger
+		choice: JAKQ
+		choice: Gokaiger
+	choice: Other...
